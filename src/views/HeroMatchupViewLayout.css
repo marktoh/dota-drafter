@@ -1,0 +1,18 @@
+.hero-matchup-view-layout h2 {
+    text-transform: capitalize;
+}
+
+.hero-matchup-view-layout .preview {
+    display: flex;
+}
+
+.hero-matchup-view-layout .description .title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero-matchup-view-layout .description a {
+    text-decoration: none;
+    color: #3182bd;
+}

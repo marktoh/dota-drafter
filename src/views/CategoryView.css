@@ -1,0 +1,4 @@
+.empty-category-message {
+    color: var(--darker-grey);
+    width: max-content;
+}

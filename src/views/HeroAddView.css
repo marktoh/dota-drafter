@@ -1,0 +1,14 @@
+.hero-add-view {
+    padding: 15px;
+    box-shadow: var(--paper);
+}
+
+.hero-add-view-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-add-view button {
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.hero-edit-view .category {
+    text-transform: capitalize;
+}
+
+.hero-edit-view .pairings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--grid-dimensions));
+    gap: 5px;
+}
+
+.hero-edit-view .buttons {
+    margin: 15px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.hero-edit-view .buttons button {
+    padding: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}

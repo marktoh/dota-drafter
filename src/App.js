@@ -13,7 +13,7 @@ import HeroMatchupEditView from './views/HeroMatchupEditView';
 import './App.css';
 
 function App() {
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(true);
   return (
     <div className={`app ${theme ? 'dark-mode' : 'light-mode'}`}>
       <Header mode={theme} onModeClick={setTheme} />

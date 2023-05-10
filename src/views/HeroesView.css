@@ -1,6 +1,7 @@
 .heroes-view .heroes-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, var(--grid-dimensions));
+    justify-content: center;
     justify-items: center;
     gap: 5px;
     padding: 0 25px;

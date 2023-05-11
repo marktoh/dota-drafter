@@ -2,11 +2,11 @@ import Auth from '../components/Auth'
 
 import './SignInWithGoogleForm.css';
 
-function SignInWithGoogleForm({ setUser }) {
+function SignInWithGoogleForm({ onLoginSuccess }) {
     return (
         <div className="sign-in-with-google-form">
             <h1>Sign in with Google</h1>
-            <Auth setUser={setUser} />
+            <Auth onLoginSuccess={onLoginSuccess} />
         </div>
     )
 }

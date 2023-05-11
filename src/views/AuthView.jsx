@@ -2,15 +2,15 @@ import LogoutFromGoogleForm from '../components/LogoutFromGoogleForm';
 import SignInWithGoogleForm from '../components/SignInWithGoogleForm';
 import './AuthView.css';
 
-function Display({ user, setUser }) {
+function Display({ user, onLoginSuccess, onLogoutSuccess }) {
     return user ? 
-        <LogoutFromGoogleForm setUser={setUser} /> :
-        <SignInWithGoogleForm setUser={setUser} />
+        <LogoutFromGoogleForm onLogoutSuccess={onLogoutSuccess} /> :
+        <SignInWithGoogleForm onLoginSuccess={onLoginSuccess} />
 }
-function AuthView({ user, setUser }) {
+function AuthView({ user, onLoginSuccess, onLogoutSuccess }) {
     return (
         <div className="auth-view">
-            <Display user={user} setUser={setUser} />
+            <Display user={user} onLoginSuccess={onLoginSuccess} onLogoutSuccess={onLogoutSuccess} />
         </div>
     )
 }

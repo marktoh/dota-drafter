@@ -1,15 +1,12 @@
-import { useNavigate } from 'react-router-dom';
 import { GoogleLogin } from '@react-oauth/google';
 import jwt_decode from 'jwt-decode';
 
-function Auth({ setUser }) {
-    const navigate = useNavigate();
+function Auth({ onLoginSuccess }) {
     return (
         <GoogleLogin
         onSuccess={credentialResponse => {
             const decoded = jwt_decode(credentialResponse.credential);
-            setUser(decoded);
-            navigate(-1);
+            onLoginSuccess(decoded);
         }}
         onError={() => {
             console.log('Login Failed');

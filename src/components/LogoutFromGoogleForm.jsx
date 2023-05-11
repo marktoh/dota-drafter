@@ -1,14 +1,11 @@
-import { useNavigate } from 'react-router-dom';
 import { googleLogout } from '@react-oauth/google';
 
 import './LogoutFromGoogleForm.css'
 
-function LogoutFromGoogleForm({ setUser }) {
-    const navigate = useNavigate();
+function LogoutFromGoogleForm({ onLogoutSuccess }) {
     function handleLogout() {
         googleLogout();
-        setUser(undefined);
-        navigate(-1);
+        onLogoutSuccess();
     }
     return (
         <div className="log-out-from-google-form">

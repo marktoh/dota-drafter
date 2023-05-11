@@ -19,7 +19,7 @@ function Description({ category, heroId, secondaryHeroId, description, isEditabl
     )
 }
 
-function HeroMatchupViewLayout({ user }) {
+function HeroMatchupViewLayout({ isEditable }) {
     const { category, heroId, secondaryHeroId } = useParams();
     const [matchup, setMatchup] = useState(null);
     const location = useLocation();
@@ -40,9 +40,9 @@ function HeroMatchupViewLayout({ user }) {
         <div className="hero-matchup-view-layout">
             <h2>{formatCategoryId(category)}</h2>
             <div className="preview">
-                <HeroPreview heroId={hero.id} img={hero.img} name={hero.localized_name} />
+                <HeroPreview heroId={hero?.id} img={hero?.img} name={hero?.localized_name} />
             </div>
-            <Description category={category} heroId={heroId} secondaryHeroId={secondaryHeroId} description={matchup?.description} isEditable={user} />
+            <Description category={category} heroId={heroId} secondaryHeroId={secondaryHeroId} description={matchup?.description} isEditable={isEditable} />
         </div>
     )
 }

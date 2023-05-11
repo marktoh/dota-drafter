@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useParams, useOutletContext, useNavigate } from 'react-router-dom';
 
 import { upsertPairings } from '../api/pairings';
@@ -19,6 +19,7 @@ function TextInput({ category, heroId, secondaryHeroId, description }) {
         navigate('..');
     }
     function handleKeyPress(e) {
+        // eslint-disable-next-line eqeqeq, no-mixed-operators
         if (e.keyCode == 13 && e.ctrlKey || e.keyCode == 13 && e.metaKey) {
             handleSubmit(e);
         } else {

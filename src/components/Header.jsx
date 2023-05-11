@@ -1,7 +1,30 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
 
-function Header({ mode, onModeClick }) {
+function Profile({ user }) {
+    const navigate = useNavigate();
+    return (
+        <div className="user-profile" onClick={() => navigate('/auth')}>
+            <img src={user?.picture} alt="profile" />
+            <div className="user-details">
+                <div className="name">{user?.name}</div>
+                <div className="email">{user?.email}</div>
+            </div>
+        </div>
+    )
+}
+function LogInButton() {
+    const navigate = useNavigate();
+    return (
+        <div className="login-btn" onClick={() => navigate('/auth')}>
+            log in
+        </div>
+    )
+}
+function Supplementary({ user }) {
+    return user ? <Profile user={user} /> : <LogInButton />
+}
+function Header({ mode, onModeClick, user }) {
     return (
         <header className={`header ${mode ? 'dark' : 'light'}`}>
             <div className="logo">
@@ -9,9 +32,7 @@ function Header({ mode, onModeClick }) {
                     Dota Drafter
                 </Link>
             </div>
-            <div className="theme-btn" onClick={() => onModeClick(!mode)}>
-                switch mode
-            </div>
+            <Supplementary user={user} />
         </header>
     )
 }

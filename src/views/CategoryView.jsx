@@ -5,7 +5,7 @@ import HeroPreview from '../components/HeroPreview';
 
 import './CategoryView.css';
 
-function CategoryView({ title, table_id, main_hero_id, getFn, onClick }) {
+function CategoryView({ title, table_id, main_hero_id, getFn, onClick, isEditable }) {
     const [pairings, setPairings] = useState(null);
     async function getPairings() {
         const data = await getFn({ table_id, main_hero_id });
@@ -19,7 +19,7 @@ function CategoryView({ title, table_id, main_hero_id, getFn, onClick }) {
         <div className="category">
             <div className="title">
                 <h2>{title}</h2>
-                <Link to={`edit/${table_id}`} className="edit-btn">Edit</Link>
+                {isEditable ? <Link to={`edit/${table_id}`} className="edit-btn">Edit</Link> : null}
             </div>
             <div className="content">
                 <div className="pairings">

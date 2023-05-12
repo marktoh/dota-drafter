@@ -13,6 +13,7 @@ import HeroMatchupView from './views/HeroMatchupView';
 import HeroMatchupEditView from './views/HeroMatchupEditView';
 
 import { getWhitelist } from './api/whitelist';
+import { trackAnalytics } from './api/analytics';
 
 import './App.css';
 
@@ -23,10 +24,12 @@ function App() {
   async function onLoginSuccess(credentials) {
     const row = await getWhitelist({ email: credentials?.email });
     credentials['hasEditAccess'] = row ? true : false;
+    trackAnalytics('LOG_IN', credentials?.email, credentials);
     setUser(credentials);
     navigate(-1);
   }
   function onLogoutSuccess() {
+    trackAnalytics('LOG_OUT', user?.email, user);
     setUser(undefined);
     navigate(-1);
   }

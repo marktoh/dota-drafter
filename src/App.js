@@ -22,6 +22,7 @@ function App() {
   const [user, setUser] = useState(undefined);
   const navigate = useNavigate();
   useEffect(() => {
+    window.scrollTo(0, 0);
     trackPage(window.location.pathname, user?.email, navigator?.userAgent);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [navigate]);

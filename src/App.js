@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 
 import Header from './components/Header';
@@ -13,7 +13,7 @@ import HeroMatchupView from './views/HeroMatchupView';
 import HeroMatchupEditView from './views/HeroMatchupEditView';
 
 import { getWhitelist } from './api/whitelist';
-import { trackAnalytics } from './api/analytics';
+import { trackAnalytics, trackPage } from './api/analytics';
 
 import './App.css';
 
@@ -21,15 +21,19 @@ function App() {
   const [theme, setTheme] = useState(true);
   const [user, setUser] = useState(undefined);
   const navigate = useNavigate();
+  useEffect(() => {
+    trackPage(window.location.pathname, user?.email, navigator?.userAgent);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [navigate]);
   async function onLoginSuccess(credentials) {
     const row = await getWhitelist({ email: credentials?.email });
     credentials['hasEditAccess'] = row ? true : false;
-    trackAnalytics('LOG_IN', credentials?.email, credentials);
+    trackAnalytics('LOG_IN', credentials?.email, credentials, navigator?.userAgent);
     setUser(credentials);
     navigate(-1);
   }
   function onLogoutSuccess() {
-    trackAnalytics('LOG_OUT', user?.email, user);
+    trackAnalytics('LOG_OUT', user?.email, user, navigator?.userAgent);
     setUser(undefined);
     navigate(-1);
   }

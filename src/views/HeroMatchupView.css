@@ -12,4 +12,5 @@
 .hero-matchup-view pre {
     margin: 0;
     font-family: inherit;
+    white-space: break-spaces;
 }

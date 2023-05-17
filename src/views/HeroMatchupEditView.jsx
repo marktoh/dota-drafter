@@ -16,7 +16,7 @@ function TextInput({ category, heroId, secondaryHeroId, description }) {
             secondary_hero_id: secondaryHeroId, 
             description: textInput
         })
-        navigate('..');
+        navigate('..', { replace: true });
     }
     function handleKeyPress(e) {
         // eslint-disable-next-line eqeqeq, no-mixed-operators

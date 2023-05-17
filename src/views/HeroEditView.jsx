@@ -36,7 +36,7 @@ function HeroEditView() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     function handleClick(secondaryHeroId) {
-        navigate(`/heroes/${heroId}/${category}/${secondaryHeroId}`)
+        navigate(`/heroes/${heroId}/${category}/${secondaryHeroId}`, { replace: true })
     }
     return (
         <div className="hero-edit-view">

@@ -22,6 +22,7 @@
     border-radius: 25px;
     font-size: 1.0rem;
     font-family: inherit;
+    animation: fadeIn 0.5s;
 }
 
 .empty-result-message {

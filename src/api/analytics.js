@@ -13,7 +13,21 @@ async function trackPage(page, email, user_agent) {
     return error;
 }
 
+async function getAnalyticsEventsApi() {
+    const { data, error } = await supabase.from('analytics_events').select().order('id', { ascending: false });
+    logApi(`getAnalyticsEventsApi`, error, data);
+    return data;
+}
+
+async function getAnalyticsPageVisitsApi() {
+    const { data, error } = await supabase.from('analytics_page_visits').select().order('id', { ascending: false });
+    logApi(`getAnalyticsPageVisitsApi`, error, data);
+    return data;
+}
+
 export {
     trackPage,
-    trackAnalytics
+    trackAnalytics,
+    getAnalyticsEventsApi,
+    getAnalyticsPageVisitsApi
 }

@@ -29,7 +29,13 @@ function Header({ mode, onModeClick, user }) {
         <header className={`header ${mode ? 'dark' : 'light'}`}>
             <div className="logo">
                 <Link to="/">
-                    Dota Drafter
+                    <div className="text">
+                        <h1 className="initial">D</h1>
+                        <div className="right">
+                            <div className="top">ota</div>
+                            <div className="bottom">drafter</div>
+                        </div>
+                    </div>
                 </Link>
             </div>
             <Supplementary user={user} />

@@ -18,6 +18,38 @@
     font-weight: 800;
 }
 
+.header .logo .text {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo .text .initial {
+    margin: 0px;
+    padding: 0px;
+    line-height: 0;
+    font-weight: 400;
+    font-family: ui-rounded;
+    font-size: 1.5rem;
+}
+
+.header .logo .text .right {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    line-height: 0.8;
+}
+
+.header .logo .right .top {
+    font-size: 0.9rem;
+}
+
+.header .logo .right .bottom {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+}
+
 .header a {
     text-decoration: none;
     color: inherit;
@@ -26,6 +58,7 @@
 .header .login-btn {
     cursor: pointer;
     user-select: none;
+    padding: 0 15px;
 }
 
 .header .user-profile {

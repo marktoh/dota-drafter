@@ -25,9 +25,16 @@ async function getAnalyticsPageVisitsApi() {
     return data;
 }
 
+async function getAnalyticsPageVisitsByDayApi() {
+    const { data, error } = await supabase.from('analytics_page_visits_by_day_view').select();
+    logApi(`getAnalyticsPageVisitsByDayApi`, error, data);
+    return data;
+}
+
 export {
     trackPage,
     trackAnalytics,
     getAnalyticsEventsApi,
-    getAnalyticsPageVisitsApi
+    getAnalyticsPageVisitsApi,
+    getAnalyticsPageVisitsByDayApi
 }

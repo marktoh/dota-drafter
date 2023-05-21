@@ -13,6 +13,7 @@ function AdminLayout() {
         <nav className="admin-navbar">
             <Link to="/admin/analytics/events">Events</Link>
             <Link to="/admin/analytics/page-visits">Page Visits</Link>
+            <Link to="/admin/analytics/page-visits-by-day">Page Visits By Day</Link>
         </nav>
         <Outlet />
     </div>

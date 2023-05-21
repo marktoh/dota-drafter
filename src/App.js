@@ -18,6 +18,7 @@ import SplashView from './views/SplashView';
 
 import AnalyticsEventsView from './views/admin/AnalyticsEventsView';
 import AnalyticsPageVisitsView from './views/admin/AnalyticsPageVisitsView';
+import AnalyticsPageVisitsByDayView from './views/admin/AnalyticsPageVisitsByDayView';
 
 import { getWhitelist } from './api/whitelist';
 import { trackAnalytics, trackPage } from './api/analytics';
@@ -92,6 +93,7 @@ function App() {
                 <Route index element={<Navigate to="events" replace />} />
                 <Route path="events" element={<AnalyticsEventsView />} />
                 <Route path="page-visits" element={<AnalyticsPageVisitsView />} />
+                <Route path="page-visits-by-day" element={<AnalyticsPageVisitsByDayView />} />
               </Route>
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />

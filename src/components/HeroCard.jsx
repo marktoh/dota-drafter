@@ -1,4 +1,5 @@
 import OpenDotaImage from "./OpenDotaImage";
+import { imageUrl } from "../api/open-dota-url";
 
 import "./HeroCard.css";
 
@@ -22,7 +23,7 @@ function HeroCard({ hero }) {
       <div className="intro">
         <div className="title">
           <div className="name">
-            <img src={`https://api.opendota.com${hero.icon}`} alt={hero.icon} />
+            <img src={`${imageUrl}${hero.icon}`} alt={hero.icon} />
             <div>{hero.localized_name}</div>
           </div>
           <div className="attribute">

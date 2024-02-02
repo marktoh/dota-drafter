@@ -1,3 +1,4 @@
+import { imageUrl } from "../api/open-dota-url";
 import "./OpenDotaImage.css";
 
 /**
@@ -7,8 +8,7 @@ import "./OpenDotaImage.css";
  * @returns
  */
 function OpenDotaImage({ path }) {
-  const BASE_URL = "https://cdn.cloudflare.steamstatic.com";
-  const completePath = BASE_URL + path;
+  const completePath = imageUrl + path;
   return <img className="open-dota-image" src={completePath} alt={path} />;
 }
 

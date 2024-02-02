@@ -1,9 +1,22 @@
 # Dota Drafter
 
-A tool to help you win your drafts.
+A tool to help you win your drafts
 
-## API
+## Table of Contents
 
-| API                                           | Mock File            |
-| --------------------------------------------- | -------------------- |
-| https://api.opendota.com/api/constants/heroes | heroes_original.json |
+- 🖥️ [Development](#development)
+
+## Development
+
+### Scripts
+
+| Script          | Description                |
+| --------------- | -------------------------- |
+| `npm run start` | Starts the app in dev mode |
+
+### API
+
+| API                                           | Description | Mock File            |
+| --------------------------------------------- | ----------- | -------------------- |
+| https://api.opendota.com/api/constants/heroes | Hero Data   | heroes_original.json |
+| https://cdn.cloudflare.steamstatic.com        | Hero Images | N/A                  |

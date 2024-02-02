@@ -1,20 +1,20 @@
 .hero-view {
-    padding: 0 15px;
-    min-height: 500px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: start;
-    gap: 15px;
+  padding: 0 15px;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  gap: 15px;
 }
 
 @media only screen and (max-width: 1200px) {
-    .hero-view {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
+  .hero-view {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 
-    .hero-view .properties {
-        display: none;
-    }
+  .hero-view .properties {
+    display: none;
+  }
 }

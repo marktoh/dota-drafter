@@ -1,16 +1,16 @@
 .hero-matchup-view .title {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .hero-matchup-view a {
-    text-decoration: none;
-    color: #3182bd;
+  text-decoration: none;
+  color: #3182bd;
 }
 
 .hero-matchup-view pre {
-    margin: 0;
-    font-family: inherit;
-    white-space: break-spaces;
+  margin: 0;
+  font-family: inherit;
+  white-space: break-spaces;
 }

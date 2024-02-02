@@ -1,44 +1,44 @@
 .analytics-page-visits-view {
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 }
 
 .analytics-page-visits-view .concise {
-    max-inline-size: 30ch;
+  max-inline-size: 30ch;
 }
 
 .analytics-page-visits-view table {
-    font-family: -apple-system;
-    font-size: 0.875rem;
+  font-family: -apple-system;
+  font-size: 0.875rem;
 }
 
 .analytics-page-visits-view table td {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    text-align: center;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .analytics-page-visits-view table tbody tr {
-    height: 30px;
+  height: 30px;
 }
 
 .analytics-page-visits-view table .profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .analytics-page-visits-view table img {
-    height: 48px;
-    width: 48px;
-    border-radius: 5px;
+  height: 48px;
+  width: 48px;
+  border-radius: 5px;
 }
 
 .analytics-page-visits-view table .profile .info {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }

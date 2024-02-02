@@ -1,12 +1,12 @@
 .admin {
-    background: white;
+  background: white;
 }
 
 .admin .admin-navbar {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .admin .admin-navbar a {
-    text-decoration: none;
+  text-decoration: none;
 }

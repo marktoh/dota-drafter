@@ -1,27 +1,27 @@
 .category .title {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .category .edit-btn {
-    border: none;
-    background: none;
-    color: #3182bd;
-    cursor: pointer;
-    text-decoration: none;
+  border: none;
+  background: none;
+  color: #3182bd;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .category .edit-btn:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .category .content .empty-category-message {
-    color: var(--darker-grey);
+  color: var(--darker-grey);
 }
 
 .category .content .pairings {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, var(--grid-dimensions));
-    gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--grid-dimensions));
+  gap: 5px;
 }

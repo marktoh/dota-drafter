@@ -1,14 +1,14 @@
 .hero-remove-view {
-    padding: 15px;
-    box-shadow: var(--paper);
+  padding: 15px;
+  box-shadow: var(--paper);
 }
 
 .hero-remove-view-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero-remove-view button {
-    cursor: pointer;
+  cursor: pointer;
 }

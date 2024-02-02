@@ -1,33 +1,37 @@
 .app {
-    min-height: 100vh;
-    padding-top: calc(var(--header-height) + 15px);
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  padding-top: calc(var(--header-height) + 15px);
+  display: flex;
+  flex-direction: column;
 }
 
 .dark-mode {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
 
 .light-mode {
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 }
 
 .app > *:nth-child(2) {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0.2; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 img {
-    animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
 }

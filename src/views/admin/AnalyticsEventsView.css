@@ -1,72 +1,72 @@
 .analytics-events-view {
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 }
 
 .analytics-events-view .concise {
-    max-inline-size: 30ch;
+  max-inline-size: 30ch;
 }
 
 .analytics-events-view table {
-    font-family: -apple-system;
-    font-size: 0.875rem;
+  font-family: -apple-system;
+  font-size: 0.875rem;
 }
 
 .analytics-events-view table td {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    text-align: center;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .analytics-events-view table tbody tr {
-    height: 30px;
+  height: 30px;
 }
 
 .analytics-events-view table .profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .analytics-events-view table img {
-    height: 48px;
-    width: 48px;
-    border-radius: 5px;
+  height: 48px;
+  width: 48px;
+  border-radius: 5px;
 }
 
 .analytics-events-view table .profile .info {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .list-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .list-item .picture img {
-    height: 60px;
-    width: 60px;
-    border-radius: 5px;
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
 }
 
 .list-item .info {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .list-item .event-time {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .event {
-    display: inline-block;
-    border-radius: 5px;
+  display: inline-block;
+  border-radius: 5px;
 }

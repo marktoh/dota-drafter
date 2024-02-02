@@ -1,36 +1,36 @@
 .heroes-view .heroes-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, var(--grid-dimensions));
-    justify-content: center;
-    justify-items: center;
-    gap: 5px;
-    padding: 0 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--grid-dimensions));
+  justify-content: center;
+  justify-items: center;
+  gap: 5px;
+  padding: 0 25px;
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 25px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 15px;
 }
 
 .search-bar input {
-    min-width: 300px;
-    width: 40%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    font-size: 1.0rem;
-    font-family: inherit;
-    animation: fadeIn 0.5s;
+  min-width: 300px;
+  width: 40%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-family: inherit;
+  animation: fadeIn 0.5s;
 }
 
 .empty-result-message {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--grey);
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }

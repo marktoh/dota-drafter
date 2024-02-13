@@ -1,6 +1,6 @@
 # Dota Drafter
 
-A tool to help you win your drafts
+A tool for recording Dota Drafts built with React, Supabase, and OpenDota API
 
 ## Table of Contents
 
